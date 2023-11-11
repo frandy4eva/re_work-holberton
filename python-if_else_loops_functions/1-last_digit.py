@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+"""Print specific output based on random number"""
 from random import randint
 number = randint(-10000, 10000)
 number = abs(number)
