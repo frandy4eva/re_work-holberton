@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 """Assign random number to variable number"""
 from random import randint
 number = randint(-10, 10)
