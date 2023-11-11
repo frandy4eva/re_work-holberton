@@ -1,0 +1,1 @@
+![Working with f-string](f-string.avif)
