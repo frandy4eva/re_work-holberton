@@ -1,7 +1,8 @@
 from calculator_1 import add, sub, mul, div
 import sys
 
-if __name__ == '__main__':
+
+def my_calculator():
     operators = {'+': add, '-': sub, '*': mul, '/': div}
     if len(sys.argv) - 1 != 3:
         print("Usage: ./100-my_calculator.py <a> <operator> <b>")
@@ -13,3 +14,7 @@ if __name__ == '__main__':
     operator = sys.argv[2]
     b = int(sys.argv[3])
     print("{} {} {} = {}".format(a, operator, b, operators[operator](a, b)))
+
+
+if __name__ == '__main__':
+    my_calculator()

@@ -1,18 +1,22 @@
+import sys
 
-argm = ['NAME']
-def args(argm):
-    num_argm = len(argm)-1
 
-    if num_argm == 0:
+def my_argv():
+    sys_argv = sys.argv
+    num_argv = len(sys_argv) - 1
+
+    if num_argv == 0:
         print("0 arguments.")
     else:
-        print(f"{num_argm} {'argument:' if num_argm == 1 else 'arguments:'}")
+        print(f"{num_argv} {'argument:' if num_argv == 1 else 'arguments:'}")
 
         counter = 1
-        for elm in argm[1:]:
+        for elm in sys_argv[1:]:
             print(f"{counter}: {elm}")
             counter += 1
 
 # Example usage:
-arguments_list = []
-args(argm)
+
+
+if __name__ == '__main__':
+    my_argv()

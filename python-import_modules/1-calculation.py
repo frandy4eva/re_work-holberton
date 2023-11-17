@@ -3,7 +3,8 @@
 
 from test_dir.calculator_1 import add, sub, mul, div, mod
 
-if __name__ == '__main__':
+
+def my_calc():
     a = 15
     b = 2
 
@@ -12,3 +13,7 @@ if __name__ == '__main__':
     print(f"{a} * {b} = {mul(a, b)}")
     print(f"{a} / {b} = {div(a, b):.2f}")
     print(f"{a} % {b} = {div(a, b):.2f}")
+
+
+if __name__ == '__main__':
+    my_calc()
