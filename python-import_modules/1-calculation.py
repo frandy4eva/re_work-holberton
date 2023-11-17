@@ -1,4 +1,4 @@
-
+#!/usr/bin/python3
 """Program that imports functions from the file calculator_1.py, does some Maths, and prints the result."""
 
 from test_dir.calculator_1 import add, sub, mul, div, mod
