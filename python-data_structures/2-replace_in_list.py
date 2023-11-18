@@ -13,7 +13,7 @@ def replace_in_list(my_list, idx, element):
     list: The modified list after the replacement.
     list: The original list if the given index is out of bounds or negative.
     """
-    if idx < 0 or idx >= len(my_list):
+    if not (0 <= idx < len(my_list)):
         return my_list
     my_list[idx] = element
     return my_list
