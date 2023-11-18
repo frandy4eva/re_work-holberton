@@ -2,8 +2,9 @@
 
 
 def max_integer(my_list=[]):
-    if len(my_list) == 0:
+    if not my_list:
         return None
+
     counter = (float('-inf'))
     for num in my_list:
         if num > counter:
